@@ -1,7 +1,7 @@
 import React from 'react';
-import style from './List.module.scss'
+import style from './Lista.module.scss'
 
-function List() {
+function Lista() {
     const tarefas = [{
         tarefa: 'React',
         tempo: '02:00:00'
@@ -30,4 +30,4 @@ function List() {
     )
 }
 
-export default List;
+export default Lista;
