@@ -18,13 +18,15 @@ function Lista() {
         <aside className={style.listaTarefas}>
             <h2 onClick={() => {
                 setTarefas([...tarefas, {tarefa: 'Estudar estado', tempo: '05:00:00'}])
+                /* '...tarefas' pega todos os outros itens na lista */
             }}>Estudos do dia</h2>
             <ul>
                 {tarefas.map((item, index) => (
                     <Item
-                        key={index}
+                        key={index} 
                         {...item}
                     />
+                    /* 'key' serve para o react não se perder na lista */
                 ))}
             </ul>
         </aside>
